@@ -1,0 +1,53 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="ReferenceData" style="flex-direction: row; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); flex-wrap: nowrap; justify-content: flex-start; align-items: auto;">
+        <ui:GroupBox name="InOut" style="flex-direction: row; flex-shrink: 1;">
+            <ui:VisualElement name="ColumnName" style="flex-direction: row;">
+                <ui:Label text="In/Out" display-tooltip-when-elided="true" name="InOut" />
+                <ui:Label text="|" display-tooltip-when-elided="true" name="corner" style="flex-direction: row;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Content" />
+        </ui:GroupBox>
+        <ui:GroupBox name="Name" style="flex-direction: row; flex-shrink: 1; justify-content: flex-start;">
+            <ui:VisualElement name="ColumnName" style="flex-direction: row; align-items: stretch; justify-content: flex-end;">
+                <ui:Label text="Name" display-tooltip-when-elided="true" name="Name" />
+                <ui:Label text="|" display-tooltip-when-elided="true" name="corner" style="flex-direction: row;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Content" />
+        </ui:GroupBox>
+        <ui:GroupBox name="Object" style="flex-direction: row; flex-shrink: 1;">
+            <ui:VisualElement name="ColumnName" style="flex-direction: row; justify-content: flex-end;">
+                <ui:Label text="Object" display-tooltip-when-elided="true" name="Object" />
+                <ui:Label text="|" display-tooltip-when-elided="true" name="corner" style="flex-direction: row;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Content" />
+        </ui:GroupBox>
+        <ui:GroupBox name="Count" style="flex-direction: row; flex-shrink: 1;">
+            <ui:VisualElement name="ColumnName" style="flex-direction: row; justify-content: flex-end;">
+                <ui:Label text="Count" display-tooltip-when-elided="true" name="Count" />
+                <ui:Label text="|" display-tooltip-when-elided="true" name="corner" style="flex-direction: row;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Content" />
+        </ui:GroupBox>
+        <ui:GroupBox name="Bytes" style="flex-direction: row; flex-shrink: 1;">
+            <ui:VisualElement name="ColumnName" style="flex-direction: row; justify-content: flex-end;">
+                <ui:Label text="Bytes" display-tooltip-when-elided="true" name="Bytes" />
+                <ui:Label text="|" display-tooltip-when-elided="true" name="corner" style="flex-direction: row;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Content" />
+        </ui:GroupBox>
+        <ui:GroupBox name="TotalBytes" style="flex-direction: row; flex-shrink: 1;">
+            <ui:VisualElement name="ColumnName" style="flex-direction: row; justify-content: flex-end;">
+                <ui:Label text="Total Bytes" display-tooltip-when-elided="true" name="TotalBytes" />
+                <ui:Label text="|" display-tooltip-when-elided="true" name="corner" style="flex-direction: row;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Content" />
+        </ui:GroupBox>
+        <ui:GroupBox name="Channel" style="flex-direction: row; flex-shrink: 1;">
+            <ui:VisualElement name="ColumnName" style="flex-direction: row; justify-content: flex-end;">
+                <ui:Label text="Channel" display-tooltip-when-elided="true" name="Channel" />
+                <ui:Label text="|" display-tooltip-when-elided="true" name="corner" style="flex-direction: row;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Content" />
+        </ui:GroupBox>
+    </ui:VisualElement>
+</ui:UXML>
