@@ -53,7 +53,9 @@ namespace Mirage.Profiler
                 _start = e.localMousePosition;
 
                 _active = true;
+
                 _targetElement.CaptureMouse();
+
                 e.StopPropagation();
             }
         }
@@ -65,12 +67,8 @@ namespace Mirage.Profiler
 
             Vector2 diff = e.localMousePosition - _start;
 
-            Debug.Log(diff.x);
-
             //_targetElement.parent.style.height = _targetElement.parent.layout.height + diff.x;
             _targetElement.style.width = _targetElement.layout.width + (diff.x > 0 ? 0.5f : -0.5f);
-
-            Debug.Log(_targetElement.style.width);
 
             e.StopPropagation();
         }
@@ -81,7 +79,9 @@ namespace Mirage.Profiler
                 return;
 
             _active = false;
+
             _targetElement.ReleaseMouse();
+
             e.StopPropagation();
         }
     }
